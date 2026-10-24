@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.0] - 2026-10-24
+## [1.0.0] - 2026-10-24
 
 ### Added
 
@@ -24,5 +24,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub Releases updater with SHA-256 verification (Android).
 - Persian (RTL) and English localization; Vazirmatn font.
 
-[Unreleased]: https://github.com/tsshack/tabriz-metro/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/tsshack/tabriz-metro/releases/tag/v0.1.0
+[Unreleased]: https://github.com/tsshack/tabriz-metro/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/tsshack/tabriz-metro/releases/tag/v1.0.0
