@@ -1,0 +1,22 @@
+name: Timetable/station data error / خطای داده
+description: A wrong time, station name or coordinate / زمان، نام یا مختصات نادرست
+labels: [data]
+body:
+  - type: input
+    id: station
+    attributes:
+      label: Station / ایستگاه
+    validations:
+      required: true
+  - type: dropdown
+    id: day
+    attributes:
+      label: Day type / نوع روز
+      options: [Weekday / عادی, Friday-holiday / جمعه و تعطیل, Not time-related / مربوط به زمان نیست]
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong and what is correct? / چه چیزی نادرست است و درستش چیست؟
+      description: A photo of the official poster helps / عکس پوستر رسمی کمک می‌کند
+    validations:
+      required: true

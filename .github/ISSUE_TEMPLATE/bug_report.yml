@@ -1,0 +1,25 @@
+name: Bug report / گزارش مشکل
+description: Something is not working / چیزی درست کار نمی‌کند
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / چه اتفاقی افتاد؟
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / مراحل بازتولید
+      placeholder: "1. ...\n2. ..."
+  - type: input
+    id: version
+    attributes:
+      label: App version / نسخه برنامه
+      placeholder: "0.1.0"
+  - type: input
+    id: device
+    attributes:
+      label: Device & OS / دستگاه و سیستم‌عامل
+      placeholder: "Android 14, Samsung A54"

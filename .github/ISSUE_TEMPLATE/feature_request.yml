@@ -1,0 +1,14 @@
+name: Feature request / پیشنهاد قابلیت
+description: Suggest an idea / پیشنهاد یک ایده
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like? / چه چیزی می‌خواهید؟
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful? / چرا مفید است؟
