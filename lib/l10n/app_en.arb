@@ -193,5 +193,15 @@
   "notifLastTrainBody": "Last train from {station}: {times}",
   "notifCommuteTitle": "Commute: {from} → {to}",
   "notifCommuteBody": "Next train {time}, estimated arrival {arrival}",
-  "notificationsWebUnsupported": "Notifications are not supported on the web version; use the Android app for reminders."
+  "notificationsWebUnsupported": "Notifications are not supported on the web version; use the Android app for reminders.",
+  "fitLine": "Show whole line",
+  "zoomIn": "Zoom in",
+  "zoomOut": "Zoom out",
+  "inMinutes": "in {minutes} min",
+  "trainsRunning": "{count} trains running",
+  "swapDirection": "Switch direction",
+  "serviceEnded": "Service ended for today",
+  "mapAttributionCarto": "© OpenStreetMap contributors © CARTO",
+  "nextTrainLabel": "Next train",
+  "lineOne": "Line 1"
 }

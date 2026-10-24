@@ -11,6 +11,7 @@ class AppCard extends StatelessWidget {
     this.onTap,
     this.color,
     this.radius = AppRadii.card,
+    this.flat = false,
   });
 
   final Widget child;
@@ -19,6 +20,9 @@ class AppCard extends StatelessWidget {
   final Color? color;
   final double radius;
 
+  /// Without the soft shadow (for nested or tinted cards).
+  final bool flat;
+
   @override
   Widget build(BuildContext context) {
     final t = context.tokens;
@@ -26,13 +30,19 @@ class AppCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(radius),
       side: BorderSide(color: t.border),
     );
-    return Material(
-      color: color ?? t.surface,
-      shape: shape,
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: onTap,
-        child: Padding(padding: padding, child: child),
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(radius),
+        boxShadow: flat ? null : softShadow(context),
+      ),
+      child: Material(
+        color: color ?? t.surface,
+        shape: shape,
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: onTap,
+          child: Padding(padding: padding, child: child),
+        ),
       ),
     );
   }
@@ -100,12 +110,16 @@ class Pill extends StatelessWidget {
             Icon(icon, size: 15, color: fg),
             const SizedBox(width: 6),
           ],
-          Text(
-            label,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w600,
-              color: fg,
+          Flexible(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: fg,
+              ),
             ),
           ),
         ],
@@ -239,4 +253,147 @@ class EmptyState extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Rounded pill toggle with an animated thumb (design-system segmented
+/// control). Works in RTL and LTR.
+class PillToggle<T> extends StatelessWidget {
+  const PillToggle({
+    super.key,
+    required this.options,
+    required this.value,
+    required this.onChanged,
+  });
+
+  final List<(T value, String label, IconData? icon)> options;
+  final T value;
+  final ValueChanged<T> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = context.tokens;
+    final index = options.indexWhere((o) => o.$1 == value);
+    return Container(
+      height: 46,
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: t.surface2,
+        borderRadius: BorderRadius.circular(AppRadii.chip),
+        border: Border.all(color: t.border),
+      ),
+      child: LayoutBuilder(
+        builder: (context, c) {
+          final w = c.maxWidth / options.length;
+          return Stack(
+            children: [
+              AnimatedPositionedDirectional(
+                duration: const Duration(milliseconds: 250),
+                curve: Curves.easeOutCubic,
+                start: w * index,
+                top: 0,
+                bottom: 0,
+                width: w,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: t.surface,
+                    borderRadius: BorderRadius.circular(AppRadii.chip),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.08),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Row(
+                children: [
+                  for (final (v, label, icon) in options)
+                    Expanded(
+                      child: Semantics(
+                        selected: v == value,
+                        button: true,
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(AppRadii.chip),
+                          onTap: () => onChanged(v),
+                          child: Center(
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                if (icon != null) ...[
+                                  Icon(
+                                    icon,
+                                    size: 16,
+                                    color: v == value ? t.primary : t.fgMuted,
+                                  ),
+                                  const SizedBox(width: 6),
+                                ],
+                                Flexible(
+                                  child: Text(
+                                    label,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      fontWeight: v == value
+                                          ? FontWeight.w700
+                                          : FontWeight.w500,
+                                      color: v == value ? t.fg : t.fgMuted,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+/// Fades and slides its child in once when first built.
+class EntranceFade extends StatelessWidget {
+  const EntranceFade({super.key, required this.child, this.delay = 0});
+
+  final Widget child;
+
+  /// Stagger index (each step adds 40 ms).
+  final int delay;
+
+  @override
+  Widget build(BuildContext context) {
+    if (MediaQuery.maybeDisableAnimationsOf(context) ?? false) return child;
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0, end: 1),
+      duration: Duration(milliseconds: 320 + delay * 40),
+      curve: Curves.easeOutCubic,
+      builder: (context, v, child) => Opacity(
+        opacity: v,
+        child: Transform.translate(
+          offset: Offset(0, (1 - v) * 12),
+          child: child,
+        ),
+      ),
+      child: child,
+    );
+  }
+}
+
+/// Soft drop shadow used by elevated cards.
+List<BoxShadow> softShadow(BuildContext context) {
+  final dark = Theme.of(context).brightness == Brightness.dark;
+  return [
+    BoxShadow(
+      color: Colors.black.withValues(alpha: dark ? 0.35 : 0.06),
+      blurRadius: 18,
+      offset: const Offset(0, 6),
+    ),
+  ];
 }

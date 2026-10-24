@@ -39,6 +39,8 @@ class HomeScreen extends ConsumerWidget {
         padding: EdgeInsets.zero,
         children: [
           _Hero(
+            from: engine.timetable.southTerminal.name(persian: fa),
+            to: engine.timetable.northTerminal.name(persian: fa),
             onBell: () => context.push(Routes.automations),
             onSettings: () => context.push(Routes.settings),
           ),
@@ -159,8 +161,15 @@ class HomeScreen extends ConsumerWidget {
 }
 
 class _Hero extends StatelessWidget {
-  const _Hero({required this.onBell, required this.onSettings});
+  const _Hero({
+    required this.from,
+    required this.to,
+    required this.onBell,
+    required this.onSettings,
+  });
 
+  final String from;
+  final String to;
   final VoidCallback onBell;
   final VoidCallback onSettings;
 
@@ -212,11 +221,31 @@ class _Hero extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     Flexible(
-                      child: Text(
-                        l.lineRoute,
-                        style: TextStyle(
-                          color: t.onHero.withValues(alpha: 0.85),
-                          fontSize: 14,
+                      child: Semantics(
+                        label: '${l.lineOne} · $from - $to',
+                        child: ExcludeSemantics(
+                          child: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(text: '${l.lineOne} · $from '),
+                                WidgetSpan(
+                                  alignment: PlaceholderAlignment.middle,
+                                  child: Icon(
+                                    LucideIcons.arrowLeftRight,
+                                    size: 15,
+                                    color: t.onHero.withValues(alpha: 0.85),
+                                  ),
+                                ),
+                                TextSpan(text: ' $to'),
+                              ],
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              color: t.onHero.withValues(alpha: 0.85),
+                              fontSize: 14,
+                            ),
+                          ),
                         ),
                       ),
                     ),

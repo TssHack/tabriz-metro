@@ -380,5 +380,29 @@
       }
     }
   },
-  "notificationsWebUnsupported": "در نسخه وب اعلان‌ها پشتیبانی نمی‌شوند؛ برای یادآورها از نسخه اندروید استفاده کنید."
+  "notificationsWebUnsupported": "در نسخه وب اعلان‌ها پشتیبانی نمی‌شوند؛ برای یادآورها از نسخه اندروید استفاده کنید.",
+  "fitLine": "نمایش کل خط",
+  "zoomIn": "بزرگ‌نمایی",
+  "zoomOut": "کوچک‌نمایی",
+  "inMinutes": "{minutes} دقیقه دیگر",
+  "@inMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "trainsRunning": "{count} قطار در مسیر",
+  "@trainsRunning": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "swapDirection": "تغییر جهت",
+  "serviceEnded": "پایان سرویس امروز",
+  "mapAttributionCarto": "© مشارکت‌کنندگان OpenStreetMap © CARTO",
+  "nextTrainLabel": "قطار بعدی",
+  "lineOne": "خط ۱"
 }
