@@ -1,0 +1,383 @@
+{
+  "@@locale": "fa",
+  "appTitle": "مترو تبریز",
+  "lineRoute": "خط ۱ · ائل گؤلی ⟷ نور",
+  "navHome": "خانه",
+  "navMap": "نقشه خط",
+  "navTimetable": "زمان‌بندی",
+  "navStations": "ایستگاه‌ها",
+  "yourStation": "ایستگاه شما",
+  "changeStation": "تغییر",
+  "chooseStation": "انتخاب ایستگاه",
+  "weekday": "روز عادی",
+  "holiday": "جمعه و تعطیل",
+  "scheduleAuto": "خودکار",
+  "todayIs": "امروز",
+  "headwayEvery": "هر {minutes} دقیقه",
+  "@headwayEvery": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "nextTrains": "قطارهای بعدی",
+  "towardStation": "به سمت {name}",
+  "@towardStation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "minutesUnit": "دقیقه",
+  "now": "الان",
+  "arriving": "در حال رسیدن",
+  "departsAt": "حرکت {time}",
+  "@departsAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "thenAt": "بعدی‌ها",
+  "live": "زنده",
+  "noMoreTrainsToday": "امروز قطار دیگری نیست",
+  "firstTrainNextDay": "اولین قطار: {time}",
+  "@firstTrainNextDay": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "endOfLineHere": "انتهای خط در این جهت",
+  "favoriteStations": "ایستگاه‌های نشان‌شده",
+  "noFavorites": "هنوز ایستگاهی نشان نکرده‌اید. روی ستاره کنار هر ایستگاه بزنید.",
+  "planTrip": "برنامه‌ریزی سفر",
+  "estimated": "تخمینی",
+  "estimatedNote": "زمان‌ها بر اساس جدول رسمی و تخمینی هستند.",
+  "schematic": "شماتیک",
+  "city": "شهر",
+  "youAreHere": "شما اینجا",
+  "hub": "ایستگاه تقاطع",
+  "terminal": "پایانه",
+  "mapNoCoordinates": "مختصات برخی ایستگاه‌ها موجود نیست و روی نقشه نمایش داده نمی‌شوند.",
+  "mapAttribution": "© مشارکت‌کنندگان OpenStreetMap",
+  "nearestStation": "نزدیک‌ترین ایستگاه",
+  "distanceMeters": "{meters} متر",
+  "@distanceMeters": {
+    "placeholders": {
+      "meters": {
+        "type": "String"
+      }
+    }
+  },
+  "distanceKm": "{km} کیلومتر",
+  "@distanceKm": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "walkMinutes": "{minutes} دقیقه پیاده",
+  "@walkMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "catchTrainIfLeaveNow": "اگر الان راه بیفتی به قطار {time} می‌رسی",
+  "@catchTrainIfLeaveNow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "walkingDirections": "مسیریابی پیاده",
+  "locationUnavailable": "موقعیت شما در دسترس نیست",
+  "enableLocation": "فعال‌سازی موقعیت",
+  "myLocation": "موقعیت من",
+  "firstTrain": "اولین قطار",
+  "lastTrain": "آخرین قطار",
+  "headway": "فاصله حرکت",
+  "hourLabel": "ساعت {hour}",
+  "@hourLabel": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "direction": "جهت",
+  "favorite": "نشان کردن",
+  "unfavorite": "حذف نشان",
+  "searchStations": "جستجوی ایستگاه",
+  "filterAll": "همه",
+  "filterFavorites": "نشان‌شده",
+  "filterNearby": "نزدیک من",
+  "noResults": "ایستگاهی پیدا نشد",
+  "locationTitle": "دسترسی به موقعیت مکانی",
+  "locationBody": "برای پیدا کردن نزدیک‌ترین ایستگاه، محاسبه زمان پیاده‌روی و هشدار رسیدن به مقصد، مترو تبریز به موقعیت مکانی شما نیاز دارد.",
+  "locationPoint1": "پیدا کردن نزدیک‌ترین ایستگاه",
+  "locationPoint2": "زمان پیاده‌روی تا ایستگاه",
+  "locationPoint3": "هشدار نزدیک شدن به مقصد",
+  "locationPrivacy": "موقعیت شما فقط روی همین دستگاه پردازش می‌شود و به هیچ سروری ارسال نمی‌شود.",
+  "locationAllow": "اجازه دسترسی",
+  "notNow": "فعلاً نه",
+  "openSettings": "باز کردن تنظیمات",
+  "locationDeniedForever": "دسترسی به موقعیت رد شده است. از تنظیمات دستگاه آن را فعال کنید.",
+  "locationServiceOff": "سرویس موقعیت‌یابی دستگاه خاموش است.",
+  "tripPlanner": "برنامه‌ریز سفر",
+  "from": "مبدأ",
+  "to": "مقصد",
+  "currentLocation": "موقعیت فعلی من",
+  "swap": "جابجایی",
+  "walkToStation": "پیاده تا ایستگاه {station}",
+  "@walkToStation": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "waitForTrain": "انتظار در ایستگاه",
+  "rideTrain": "سوار شدن به قطار",
+  "arriveAt": "رسیدن به {station}",
+  "@arriveAt": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "stopsCount": "{count} ایستگاه",
+  "@stopsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "startTrip": "شروع سفر",
+  "tripStarted": "هشدار مقصد تنظیم شد",
+  "departure": "حرکت",
+  "arrival": "رسیدن",
+  "total": "کل سفر",
+  "minutesValue": "{minutes} دقیقه",
+  "@minutesValue": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "noTripFound": "سفری پیدا نشد. مبدأ و مقصد را بررسی کنید.",
+  "sameStation": "مبدأ و مقصد یکی است",
+  "automations": "اتوماسیون‌ها",
+  "automationsIntro": "همه یادآورها روی دستگاه شما و بدون سرور زمان‌بندی می‌شوند.",
+  "autoLeaveNow": "یادآور «الان راه بیفت»",
+  "autoLeaveNowDesc": "زمانی که باید به سمت ایستگاه راه بیفتید تا به قطار برسید",
+  "autoDestination": "هشدار مقصد",
+  "autoDestinationDesc": "یک ایستگاه قبل از مقصد خبرتان می‌کنیم",
+  "autoNearest": "انتخاب خودکار نزدیک‌ترین ایستگاه",
+  "autoNearestDesc": "هنگام باز شدن برنامه، اگر موقعیت در دسترس باشد",
+  "autoDayType": "تشخیص خودکار روز عادی/تعطیل",
+  "autoDayTypeDesc": "جمعه‌ها و تعطیلات رسمی برنامه تعطیل دارند",
+  "autoLastTrain": "یادآور آخرین قطار",
+  "autoLastTrainDesc": "۳۰ دقیقه قبل از آخرین قطار ایستگاه شما",
+  "autoCommute": "میانبر رفت‌وآمد روزانه",
+  "autoCommuteDesc": "در روزهای کاری، در ساعت تعیین‌شده",
+  "station": "ایستگاه",
+  "homeStation": "ایستگاه خانه",
+  "workStation": "ایستگاه محل کار",
+  "reminderTime": "ساعت",
+  "walkToStationMinutes": "زمان رسیدن به ایستگاه",
+  "geofence": "هشدار مکانی هنگام باز بودن برنامه",
+  "holidaysNeedReview": "فهرست تعطیلات رسمی ۱۴۰۴–۱۴۰۵ همراه برنامه است و نیاز به بازبینی دارد.",
+  "notificationsDenied": "اجازه نمایش اعلان داده نشده است.",
+  "settings": "تنظیمات",
+  "appearance": "ظاهر",
+  "theme": "پوسته",
+  "themeSystem": "سیستم",
+  "themeLight": "روشن",
+  "themeDark": "تیره",
+  "textSize": "اندازه متن",
+  "digits": "ارقام",
+  "digitsFa": "فارسی",
+  "digitsEn": "انگلیسی",
+  "language": "زبان",
+  "travel": "سفر",
+  "defaultStation": "ایستگاه پیش‌فرض",
+  "none": "هیچ",
+  "walkingSpeed": "سرعت پیاده‌روی",
+  "speedSlow": "آهسته",
+  "speedNormal": "معمولی",
+  "speedFast": "سریع",
+  "schedule": "برنامه حرکت",
+  "notifications": "اعلان‌ها",
+  "updates": "به‌روزرسانی",
+  "autoCheckUpdates": "بررسی خودکار روزانه",
+  "updateChannel": "کانال انتشار",
+  "channelStable": "پایدار",
+  "channelBeta": "آزمایشی",
+  "currentVersion": "نسخه فعلی",
+  "checkNow": "بررسی اکنون",
+  "data": "داده‌ها",
+  "dataVersion": "نسخه داده زمان‌بندی",
+  "clearFavorites": "پاک کردن نشان‌شده‌ها",
+  "clearFavoritesConfirm": "همه ایستگاه‌های نشان‌شده حذف شوند؟",
+  "cancel": "انصراف",
+  "confirm": "تأیید",
+  "done": "انجام شد",
+  "about": "درباره",
+  "updateTitle": "به‌روزرسانی برنامه",
+  "updateAvailable": "نسخه {version} منتشر شده است",
+  "@updateAvailable": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "upToDate": "شما آخرین نسخه را دارید",
+  "checking": "در حال بررسی…",
+  "downloadAndInstall": "دانلود و نصب",
+  "downloading": "در حال دانلود… {percent}٪",
+  "@downloading": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "verifying": "بررسی صحت فایل…",
+  "install": "نصب",
+  "skipVersion": "رد کردن این نسخه",
+  "wifiOnly": "دانلود فقط با Wi-Fi",
+  "releaseNotes": "یادداشت‌های انتشار",
+  "size": "حجم",
+  "date": "تاریخ",
+  "openReleasePage": "مشاهده صفحه انتشار",
+  "offline": "اتصال اینترنت برقرار نیست.",
+  "rateLimited": "محدودیت درخواست GitHub؛ کمی بعد دوباره امتحان کنید.",
+  "checksumMismatch": "فایل دانلودشده معتبر نیست (SHA-256 مطابقت ندارد).",
+  "noChecksum": "فایل checksum برای این نسخه یافت نشد؛ نصب انجام نمی‌شود.",
+  "needWifi": "برای دانلود به Wi-Fi متصل شوید یا گزینه «فقط Wi-Fi» را خاموش کنید.",
+  "noApk": "فایل نصبی مناسب این دستگاه یافت نشد.",
+  "genericError": "خطایی رخ داد: {message}",
+  "@genericError": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "retry": "تلاش دوباره",
+  "updateBanner": "نسخه جدید {version} آماده است",
+  "@updateBanner": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "view": "مشاهده",
+  "openSource": "متن‌باز · MIT",
+  "developer": "توسعه‌دهنده",
+  "developerName": "احسان فضلی",
+  "website": "وب‌سایت",
+  "github": "گیت‌هاب",
+  "project": "پروژه",
+  "sourceCode": "کد منبع",
+  "reportIssue": "گزارش مشکل",
+  "starProject": "ستاره دادن در GitHub",
+  "shareApp": "معرفی به دوستان",
+  "shareText": "مترو تبریز — زمان حرکت قطارهای خط ۱ تبریز، متن‌باز و رایگان: {url}",
+  "@shareText": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "dataSource": "منبع داده",
+  "dataSourceBody": "پوسترهای رسمی زمان‌بندی سازمان قطار شهری تبریز (مهر ۱۴۰۴). مختصات ایستگاه‌ها از OpenStreetMap.",
+  "licenses": "مجوزهای نرم‌افزار",
+  "versionLabel": "نسخه {version}",
+  "@versionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "یادآورهای سفر",
+  "notifChannelDesc": "یادآورهای قطار و هشدار مقصد",
+  "notifLeaveNowTitle": "الان راه بیفت",
+  "notifLeaveNowBody": "برای رسیدن به قطار {time} ایستگاه {station} راه بیفتید.",
+  "@notifLeaveNowBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "notifDestTitle": "ایستگاه بعد: {station}",
+  "@notifDestTitle": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      }
+    }
+  },
+  "notifDestBody": "آماده پیاده شدن باشید؛ رسیدن تخمینی {time}.",
+  "@notifDestBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "notifLastTrainTitle": "آخرین قطار نزدیک است",
+  "notifLastTrainBody": "آخرین قطار از {station}: {times}",
+  "@notifLastTrainBody": {
+    "placeholders": {
+      "station": {
+        "type": "String"
+      },
+      "times": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCommuteTitle": "سفر روزانه: {from} ← {to}",
+  "@notifCommuteTitle": {
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCommuteBody": "قطار بعدی {time}، رسیدن تخمینی {arrival}",
+  "@notifCommuteBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "arrival": {
+        "type": "String"
+      }
+    }
+  }
+}
