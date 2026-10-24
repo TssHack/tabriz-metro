@@ -20,11 +20,15 @@ class LocationState {
   const LocationState({
     this.status = LocationStatus.unknown,
     this.position,
+    this.accuracy,
     this.loading = false,
   });
 
   final LocationStatus status;
   final GeoPoint? position;
+
+  /// Horizontal accuracy of [position] in meters, when known.
+  final double? accuracy;
   final bool loading;
 
   bool get granted => status == LocationStatus.granted;
@@ -32,10 +36,12 @@ class LocationState {
   LocationState copyWith({
     LocationStatus? status,
     GeoPoint? position,
+    double? accuracy,
     bool? loading,
   }) => LocationState(
     status: status ?? this.status,
     position: position ?? this.position,
+    accuracy: accuracy ?? this.accuracy,
     loading: loading ?? this.loading,
   );
 }
@@ -110,6 +116,7 @@ class LocationController extends Notifier<LocationState> {
       state = LocationState(
         status: LocationStatus.granted,
         position: GeoPoint(pos.latitude, pos.longitude),
+        accuracy: pos.accuracy,
       );
     } on Object {
       state = state.copyWith(loading: false);
@@ -130,6 +137,7 @@ class LocationController extends Notifier<LocationState> {
           ).listen(
             (pos) => state = state.copyWith(
               position: GeoPoint(pos.latitude, pos.longitude),
+              accuracy: pos.accuracy,
             ),
             onError: (Object _) {},
           );

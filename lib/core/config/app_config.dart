@@ -16,5 +16,12 @@ abstract final class AppConfig {
   /// User agent for OSM tiles and the GitHub API.
   static const userAgentPackage = 'ir.ehsanfazli.tabriz_metro';
 
+  /// CARTO basemaps (OpenStreetMap data); `{r}` becomes `@2x` on retina.
+  static const cartoLightTileUrl =
+      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+  static const cartoDarkTileUrl =
+      'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+
+  /// Fallback when CARTO tiles fail to load.
   static const osmTileUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 }

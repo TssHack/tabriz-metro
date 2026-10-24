@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../../core/theme/tokens.dart';
+import '../../core/widgets/common.dart';
 import '../../l10n/generated/app_localizations.dart';
 import 'city_map_view.dart';
 import 'schematic_view.dart';
@@ -23,42 +24,39 @@ class _LineMapScreenState extends ConsumerState<LineMapScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(l.navMap),
-        actions: [
+      backgroundColor: context.tokens.bg,
+      appBar: AppBar(title: Text(l.navMap)),
+      body: Column(
+        children: [
           Padding(
-            padding: const EdgeInsetsDirectional.only(end: 12),
-            child: SegmentedButton<MapMode>(
-              segments: [
-                ButtonSegment(
-                  value: MapMode.schematic,
-                  label: Text(l.schematic),
-                  icon: const Icon(LucideIcons.trainTrack, size: 16),
-                ),
-                ButtonSegment(
-                  value: MapMode.city,
-                  label: Text(l.city),
-                  icon: const Icon(LucideIcons.map, size: 16),
-                ),
+            padding: const EdgeInsets.fromLTRB(
+              AppSizes.gutter,
+              0,
+              AppSizes.gutter,
+              10,
+            ),
+            child: PillToggle<MapMode>(
+              value: _mode,
+              onChanged: (m) => setState(() => _mode = m),
+              options: [
+                (MapMode.schematic, l.schematic, LucideIcons.trainTrack),
+                (MapMode.city, l.city, LucideIcons.map),
               ],
-              selected: {_mode},
-              showSelectedIcon: false,
-              style: const ButtonStyle(
-                visualDensity: VisualDensity.compact,
-                padding: WidgetStatePropertyAll(
-                  EdgeInsets.symmetric(horizontal: 10),
+            ),
+          ),
+          Expanded(
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 250),
+              child: switch (_mode) {
+                MapMode.schematic => const SchematicView(
+                  key: ValueKey('schematic'),
                 ),
-              ),
-              onSelectionChanged: (v) => setState(() => _mode = v.first),
+                MapMode.city => const CityMapView(key: ValueKey('city')),
+              },
             ),
           ),
         ],
       ),
-      body: switch (_mode) {
-        MapMode.schematic => const SchematicView(),
-        MapMode.city => const CityMapView(),
-      },
-      backgroundColor: context.tokens.bg,
     );
   }
 }
