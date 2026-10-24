@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -75,6 +76,14 @@ class AutomationsScreen extends ConsumerWidget {
             icon: LucideIcons.bellRing,
             child: Text(l.automationsIntro),
           ),
+          if (kIsWeb) ...[
+            const SizedBox(height: 8),
+            InfoBanner(
+              warning: true,
+              icon: LucideIcons.triangleAlert,
+              child: Text(l.notificationsWebUnsupported),
+            ),
+          ],
           const SizedBox(height: 12),
           _AutomationCard(
             icon: LucideIcons.alarmClock,

@@ -192,5 +192,6 @@
   "notifLastTrainTitle": "Last train soon",
   "notifLastTrainBody": "Last train from {station}: {times}",
   "notifCommuteTitle": "Commute: {from} → {to}",
-  "notifCommuteBody": "Next train {time}, estimated arrival {arrival}"
+  "notifCommuteBody": "Next train {time}, estimated arrival {arrival}",
+  "notificationsWebUnsupported": "Notifications are not supported on the web version; use the Android app for reminders."
 }
