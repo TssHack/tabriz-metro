@@ -291,7 +291,7 @@ class _Summary extends StatelessWidget {
           cell(l.departure, fmt.clock(plan.boardAt), color: t.primary),
           cell(l.arrival, fmt.clock(plan.arrival), color: t.primary),
           cell(l.total, l.minutesValue(fmt.digits(plan.total.inMinutes))),
-          cell(l.station, l.stopsCount(fmt.digits(plan.stopCount))),
+          cell(l.station, fmt.digits(plan.stopCount)),
         ],
       ),
     );
