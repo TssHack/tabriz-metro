@@ -454,17 +454,19 @@ class DepartureCard extends StatelessWidget {
               const SizedBox(height: 12),
               Divider(color: t.border),
               const SizedBox(height: 8),
-              Row(
+              Wrap(
+                spacing: 6,
+                runSpacing: 6,
+                crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
-                  Text(
-                    l.thenAt,
-                    style: TextStyle(color: t.fgMuted, fontSize: 13),
+                  Padding(
+                    padding: const EdgeInsetsDirectional.only(end: 4),
+                    child: Text(
+                      l.thenAt,
+                      style: TextStyle(color: t.fgMuted, fontSize: 13),
+                    ),
                   ),
-                  const SizedBox(width: 10),
-                  for (final d in next.skip(1)) ...[
-                    Pill(label: fmt.clock(d.time)),
-                    const SizedBox(width: 6),
-                  ],
+                  for (final d in next.skip(1)) Pill(label: fmt.clock(d.time)),
                 ],
               ),
             ],
