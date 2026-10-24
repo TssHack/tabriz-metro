@@ -1,0 +1,362 @@
+{
+ "schemaVersion": 1,
+ "needsReview": true,
+ "_comment": "Iranian official public holidays for Jalali years 1404-1405. Solar dates are exact. Lunar (Hijri) dates were COMPUTED (Umm al-Qura + 1 day) and may differ by ±1 day from the official calendar published by the Iranian calendar center — MUST be reviewed against the official calendar before release. Fridays are handled in code and are not listed here.",
+ "generatedAt": "2026-10-24",
+ "range": {
+  "from": "2025-03-21",
+  "to": "2027-03-20"
+ },
+ "holidays": [
+  {
+   "date": "2025-03-21",
+   "jalali": "1404/01/01",
+   "nameFa": "عید نوروز",
+   "nameEn": "Nowruz",
+   "kind": "solar"
+  },
+  {
+   "date": "2025-03-22",
+   "jalali": "1404/01/02",
+   "nameFa": "عید نوروز / شهادت امام علی",
+   "nameEn": "Nowruz / Martyrdom of Imam Ali",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-03-23",
+   "jalali": "1404/01/03",
+   "nameFa": "عید نوروز",
+   "nameEn": "Nowruz",
+   "kind": "solar"
+  },
+  {
+   "date": "2025-03-24",
+   "jalali": "1404/01/04",
+   "nameFa": "عید نوروز",
+   "nameEn": "Nowruz",
+   "kind": "solar"
+  },
+  {
+   "date": "2025-03-31",
+   "jalali": "1404/01/11",
+   "nameFa": "عید فطر",
+   "nameEn": "Eid al-Fitr",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-04-01",
+   "jalali": "1404/01/12",
+   "nameFa": "روز جمهوری اسلامی / تعطیل عید فطر",
+   "nameEn": "Islamic Republic Day / Eid al-Fitr holiday",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-04-02",
+   "jalali": "1404/01/13",
+   "nameFa": "روز طبیعت",
+   "nameEn": "Nature Day",
+   "kind": "solar"
+  },
+  {
+   "date": "2025-04-24",
+   "jalali": "1404/02/04",
+   "nameFa": "شهادت امام صادق",
+   "nameEn": "Martyrdom of Imam Sadegh",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-06-04",
+   "jalali": "1404/03/14",
+   "nameFa": "رحلت امام خمینی",
+   "nameEn": "Death of Imam Khomeini",
+   "kind": "solar"
+  },
+  {
+   "date": "2025-06-05",
+   "jalali": "1404/03/15",
+   "nameFa": "قیام ۱۵ خرداد",
+   "nameEn": "15 Khordad Uprising",
+   "kind": "solar"
+  },
+  {
+   "date": "2025-06-07",
+   "jalali": "1404/03/17",
+   "nameFa": "عید قربان",
+   "nameEn": "Eid al-Adha",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-06-15",
+   "jalali": "1404/03/25",
+   "nameFa": "عید غدیر",
+   "nameEn": "Eid al-Ghadir",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-07-05",
+   "jalali": "1404/04/14",
+   "nameFa": "تاسوعا",
+   "nameEn": "Tasua",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-07-06",
+   "jalali": "1404/04/15",
+   "nameFa": "عاشورا",
+   "nameEn": "Ashura",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-08-15",
+   "jalali": "1404/05/24",
+   "nameFa": "اربعین",
+   "nameEn": "Arbaeen",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-08-23",
+   "jalali": "1404/06/01",
+   "nameFa": "رحلت پیامبر و شهادت امام حسن",
+   "nameEn": "Demise of the Prophet & Imam Hasan",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-08-24",
+   "jalali": "1404/06/02",
+   "nameFa": "شهادت امام رضا",
+   "nameEn": "Martyrdom of Imam Reza",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-09-10",
+   "jalali": "1404/06/19",
+   "nameFa": "میلاد پیامبر و امام صادق",
+   "nameEn": "Birth of the Prophet & Imam Sadegh",
+   "kind": "lunar"
+  },
+  {
+   "date": "2025-11-25",
+   "jalali": "1404/09/04",
+   "nameFa": "شهادت حضرت فاطمه",
+   "nameEn": "Martyrdom of Fatemeh",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-01-03",
+   "jalali": "1404/10/13",
+   "nameFa": "ولادت امام علی",
+   "nameEn": "Birth of Imam Ali",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-01-17",
+   "jalali": "1404/10/27",
+   "nameFa": "مبعث",
+   "nameEn": "Mab'ath",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-02-04",
+   "jalali": "1404/11/15",
+   "nameFa": "ولادت امام زمان",
+   "nameEn": "Birth of Imam Mahdi",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-02-11",
+   "jalali": "1404/11/22",
+   "nameFa": "پیروزی انقلاب اسلامی",
+   "nameEn": "Revolution Day",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-03-11",
+   "jalali": "1404/12/20",
+   "nameFa": "شهادت امام علی",
+   "nameEn": "Martyrdom of Imam Ali",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-03-20",
+   "jalali": "1404/12/29",
+   "nameFa": "ملی شدن صنعت نفت",
+   "nameEn": "Oil Nationalization Day",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-03-21",
+   "jalali": "1405/01/01",
+   "nameFa": "عید نوروز / عید فطر",
+   "nameEn": "Nowruz / Eid al-Fitr",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-03-22",
+   "jalali": "1405/01/02",
+   "nameFa": "عید نوروز / تعطیل عید فطر",
+   "nameEn": "Nowruz / Eid al-Fitr holiday",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-03-23",
+   "jalali": "1405/01/03",
+   "nameFa": "عید نوروز",
+   "nameEn": "Nowruz",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-03-24",
+   "jalali": "1405/01/04",
+   "nameFa": "عید نوروز",
+   "nameEn": "Nowruz",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-04-01",
+   "jalali": "1405/01/12",
+   "nameFa": "روز جمهوری اسلامی",
+   "nameEn": "Islamic Republic Day",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-04-02",
+   "jalali": "1405/01/13",
+   "nameFa": "روز طبیعت",
+   "nameEn": "Nature Day",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-04-14",
+   "jalali": "1405/01/25",
+   "nameFa": "شهادت امام صادق",
+   "nameEn": "Martyrdom of Imam Sadegh",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-05-28",
+   "jalali": "1405/03/07",
+   "nameFa": "عید قربان",
+   "nameEn": "Eid al-Adha",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-06-04",
+   "jalali": "1405/03/14",
+   "nameFa": "رحلت امام خمینی",
+   "nameEn": "Death of Imam Khomeini",
+   "kind": "solar"
+  },
+  {
+   "date": "2026-06-05",
+   "jalali": "1405/03/15",
+   "nameFa": "قیام ۱۵ خرداد / عید غدیر",
+   "nameEn": "15 Khordad Uprising / Eid al-Ghadir",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-06-25",
+   "jalali": "1405/04/04",
+   "nameFa": "تاسوعا",
+   "nameEn": "Tasua",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-06-26",
+   "jalali": "1405/04/05",
+   "nameFa": "عاشورا",
+   "nameEn": "Ashura",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-08-04",
+   "jalali": "1405/05/13",
+   "nameFa": "اربعین",
+   "nameEn": "Arbaeen",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-08-12",
+   "jalali": "1405/05/21",
+   "nameFa": "رحلت پیامبر و شهادت امام حسن",
+   "nameEn": "Demise of the Prophet & Imam Hasan",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-08-14",
+   "jalali": "1405/05/23",
+   "nameFa": "شهادت امام رضا",
+   "nameEn": "Martyrdom of Imam Reza",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-08-31",
+   "jalali": "1405/06/09",
+   "nameFa": "میلاد پیامبر و امام صادق",
+   "nameEn": "Birth of the Prophet & Imam Sadegh",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-11-14",
+   "jalali": "1405/08/23",
+   "nameFa": "شهادت حضرت فاطمه",
+   "nameEn": "Martyrdom of Fatemeh",
+   "kind": "lunar"
+  },
+  {
+   "date": "2026-12-23",
+   "jalali": "1405/10/02",
+   "nameFa": "ولادت امام علی",
+   "nameEn": "Birth of Imam Ali",
+   "kind": "lunar"
+  },
+  {
+   "date": "2027-01-06",
+   "jalali": "1405/10/16",
+   "nameFa": "مبعث",
+   "nameEn": "Mab'ath",
+   "kind": "lunar"
+  },
+  {
+   "date": "2027-01-24",
+   "jalali": "1405/11/04",
+   "nameFa": "ولادت امام زمان",
+   "nameEn": "Birth of Imam Mahdi",
+   "kind": "lunar"
+  },
+  {
+   "date": "2027-02-11",
+   "jalali": "1405/11/22",
+   "nameFa": "پیروزی انقلاب اسلامی",
+   "nameEn": "Revolution Day",
+   "kind": "solar"
+  },
+  {
+   "date": "2027-03-01",
+   "jalali": "1405/12/10",
+   "nameFa": "شهادت امام علی",
+   "nameEn": "Martyrdom of Imam Ali",
+   "kind": "lunar"
+  },
+  {
+   "date": "2027-03-10",
+   "jalali": "1405/12/19",
+   "nameFa": "عید فطر",
+   "nameEn": "Eid al-Fitr",
+   "kind": "lunar"
+  },
+  {
+   "date": "2027-03-11",
+   "jalali": "1405/12/20",
+   "nameFa": "تعطیل عید فطر",
+   "nameEn": "Eid al-Fitr holiday",
+   "kind": "lunar"
+  },
+  {
+   "date": "2027-03-20",
+   "jalali": "1405/12/29",
+   "nameFa": "ملی شدن صنعت نفت",
+   "nameEn": "Oil Nationalization Day",
+   "kind": "solar"
+  }
+ ]
+}
