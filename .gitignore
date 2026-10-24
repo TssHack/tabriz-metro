@@ -52,3 +52,4 @@ app.*.map.json
 *.keystore
 android/key.properties
 lib/l10n/generated/
+android/build/
