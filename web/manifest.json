@@ -1,13 +1,15 @@
 {
-    "name": "tabriz_metro",
-    "short_name": "tabriz_metro",
+    "name": "مترو تبریز",
+    "short_name": "مترو تبریز",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Tabriz Metro Line 1 rider app",
+    "background_color": "#F6F8FC",
+    "theme_color": "#1D4ED8",
+    "description": "Tabriz Metro Line 1 timetable",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "lang": "fa",
+    "dir": "rtl",
     "icons": [
         {
             "src": "icons/Icon-192.png",
