@@ -49,7 +49,7 @@ dependencies:
   crypto: ^3.0.7
   path_provider: ^2.1.6
   open_filex: ^5.0.0
-  flutter_svg: ^2.3.0
+  flutter_svg: ^2.3.2
   intl: ^0.20.3
   flutter_markdown_plus: ^1.0.12
   lucide_icons_flutter: ^4.0.1
