@@ -52,7 +52,7 @@ dependencies:
   flutter_svg: ^2.3.0
   intl: ^0.20.3
   flutter_markdown_plus: ^1.0.12
-  lucide_icons_flutter: ^4.0.1
+  lucide_icons_flutter: ^4.0.3
   flutter_timezone: ^5.1.1
   flutter_localizations:
     sdk: flutter
